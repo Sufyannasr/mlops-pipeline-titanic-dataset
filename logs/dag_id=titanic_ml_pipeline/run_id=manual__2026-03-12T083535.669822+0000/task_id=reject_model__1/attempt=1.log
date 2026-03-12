@@ -1,0 +1,19 @@
+[2026-03-12T08:35:37.962+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-03-12T08:35:37.978+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: titanic_ml_pipeline.reject_model__1 manual__2026-03-12T08:35:35.669822+00:00 [queued]>
+[2026-03-12T08:35:37.983+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: titanic_ml_pipeline.reject_model__1 manual__2026-03-12T08:35:35.669822+00:00 [queued]>
+[2026-03-12T08:35:37.984+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-03-12T08:35:37.990+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): reject_model__1> on 2026-03-12 08:35:35.669822+00:00
+[2026-03-12T08:35:37.998+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=1869) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-03-12T08:35:37.999+0000] {standard_task_runner.py:63} INFO - Started process 1906 to run task
+[2026-03-12T08:35:37.998+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'titanic_ml_pipeline', 'reject_model__1', 'manual__2026-03-12T08:35:35.669822+00:00', '--job-id', '117', '--raw', '--subdir', 'DAGS_FOLDER/titanic_ml_pipeline.py', '--cfg-path', '/tmp/tmpfvm1wdcm']
+[2026-03-12T08:35:38.001+0000] {standard_task_runner.py:91} INFO - Job 117: Subtask reject_model__1
+[2026-03-12T08:35:38.043+0000] {task_command.py:426} INFO - Running <TaskInstance: titanic_ml_pipeline.reject_model__1 manual__2026-03-12T08:35:35.669822+00:00 [running]> on host 7d760191f112
+[2026-03-12T08:35:38.100+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='titanic_ml_pipeline' AIRFLOW_CTX_TASK_ID='reject_model__1' AIRFLOW_CTX_EXECUTION_DATE='2026-03-12T08:35:35.669822+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-03-12T08:35:35.669822+00:00'
+[2026-03-12T08:35:38.102+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-03-12T08:35:38.102+0000] {logging_mixin.py:188} INFO - Model rejected
+[2026-03-12T08:35:38.103+0000] {python.py:237} INFO - Done. Returned value was: Rejected
+[2026-03-12T08:35:38.104+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-03-12T08:35:38.121+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=titanic_ml_pipeline, task_id=reject_model__1, run_id=manual__2026-03-12T08:35:35.669822+00:00, execution_date=20260312T083535, start_date=20260312T083537, end_date=20260312T083538
+[2026-03-12T08:35:38.173+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-03-12T08:35:38.187+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-03-12T08:35:38.189+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
